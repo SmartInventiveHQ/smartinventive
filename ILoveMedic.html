@@ -1,60 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        const CONFIG = {
+            domainName: "ILoveMedic.com",
+            slogan: "The Heart of Modern Healthcare.",
+            vision: "A compassionate and emotional brand perfect for telemedicine portals, patient support groups, or healthcare groups focused on holistic wellness and patient-first medicine.",
+            idealFor: ["Telemedicine Platforms", "Health Influencers", "Holistic Wellness Centers"],
+            image: "https://images.unsplash.com/photo-1505751172107-590225c40dd0?auto=format&fit=crop&q=80&w=2070",
+            email: "assets@smartinventive.com",
+            analyticsId: "G-CT33RX4FDJ"
+        };
+    </script>
+
+    <script async id="gtag-link"></script>
+    <script>
+        document.getElementById('gtag-link').src = "https://www.googletagmanager.com/gtag/js?id=" + CONFIG.analyticsId;
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', CONFIG.analyticsId);
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ILoveMedic.com is for sale | Premium Medical Identity</title>
+    <title id="meta-title"></title>
+    
+    <meta name="robots" content="index, follow">
+    <meta name="description" id="meta-desc" content="">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
         .serif { font-family: 'Crimson Pro', serif; }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), 
-                              url('https://images.unsplash.com/photo-1505751172107-590225c40dd0?auto=format&fit=crop&q=80&w=2070');
             background-size: cover;
             background-position: center;
         }
-        .glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col text-left">
-    <section class="hero-bg h-[60vh] flex items-center justify-center text-center px-6">
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+    <section id="hero-section" class="hero-bg h-[60vh] flex items-center justify-center text-center px-6">
         <div class="max-w-4xl">
-            <h1 class="text-white text-5xl md:text-8xl font-black tracking-tighter mb-4 drop-shadow-2xl">ILove<span class="text-blue-400">Medic</span>.com</h1>
-            <p class="serif text-white text-2xl md:text-3xl italic drop-shadow-md">"The Heart of Modern Healthcare."</p>
+            <h1 id="ui-title" class="text-white text-5xl md:text-8xl font-black tracking-tighter mb-4 drop-shadow-2xl"></h1>
+            <p id="ui-slogan" class="serif text-white text-2xl md:text-3xl italic drop-shadow-md"></p>
         </div>
     </section>
-    <main class="flex-grow container mx-auto px-6 -mt-20 mb-20 text-left">
-        <div class="glass-panel max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden flex flex-col md:row">
-            <div class="p-10 md:w-2/3 border-b md:border-b-0 md:border-r border-gray-100 text-left">
-                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4 block text-left">Asset for Acquisition</span>
-                <h2 class="serif text-4xl mb-6 text-left">Healthcare with a human touch.</h2>
-                <div class="space-y-8 text-left">
+
+    <main class="flex-grow container mx-auto px-6 -mt-20 mb-20">
+        <div class="glass-panel max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            
+            <div class="p-10 md:w-2/3 border-b md:border-b-0 md:border-r border-gray-100">
+                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest mb-4 block">Asset for Acquisition</span>
+                <h2 class="serif text-4xl mb-6">Imagine your clinic here.</h2>
+                
+                <div class="space-y-8">
                     <div>
-                        <h4 class="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-widest text-left">Strategic Value</h4>
-                        <p class="text-sm text-gray-700 leading-relaxed text-left">ILoveMedic.com is a compassionate, emotional brand perfect for telemedicine portals, patient community groups, or healthcare groups focused on holistic wellness.</p>
+                        <h4 class="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-widest">Strategic Value</h4>
+                        <p id="ui-vision" class="text-gray-700 leading-relaxed"></p>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <h4 class="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-widest text-left">Ideal For</h4>
-                            <ul class="text-sm text-gray-600 space-y-1 text-left"><li>• Telemedicine Platforms</li><li>• Health Influencers</li><li>• Patient Support Portals</li></ul>
+                            <ul id="ui-ideal" class="text-sm text-gray-600 space-y-1 text-left"></ul>
                         </div>
                         <div>
                             <h4 class="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-widest text-left">Acquisition Includes</h4>
-                            <ul class="text-sm text-gray-600 space-y-1 text-left"><li>• Immediate Ownership Transfer</li><li>• Secure Escrow Handling</li><li>• Full Portfolio Support</li></ul>
+                            <ul class="text-sm text-gray-600 space-y-1 text-left">
+                                <li>• Domain Ownership Transfer</li>
+                                <li>• Brand Vision Document</li>
+                                <li>• Strategic Logo Concept</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="p-10 md:w-1/3 bg-gray-50 flex flex-col justify-center items-center text-center">
-                <span class="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-widest text-center">Buy It Now Price</span>
-                <div class="text-4xl font-extrabold text-slate-900 mb-8">$1,295</div>
-                <a href="mailto:admin@smartinventive.com?subject=Acquisition: ILoveMedic.com" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-blue-700 transition shadow-lg mb-4 text-center">Inquire Now</a>
-                <p class="text-[10px] text-gray-400 uppercase font-bold tracking-tight text-center">Available via Secure Transfer</p>
-                <div class="mt-8 pt-8 border-t border-gray-200 w-full"><a href="https://smartinventive.com" class="text-xs text-blue-600 font-bold hover:underline">← View Full Portfolio</a></div>
+                <span class="text-[10px] uppercase font-black text-gray-400 mb-2 tracking-widest text-center">Ownership Inquiry</span>
+                <div class="text-2xl font-bold text-slate-800 mb-8 italic serif">Premium Asset</div>
+                
+                <a id="ui-mail-link" href="#" 
+                   class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-blue-700 transition shadow-lg shadow-blue-200 mb-4">
+                    Inquire Now
+                </a>
+                
+                <p class="text-[10px] text-gray-400 uppercase font-bold tracking-tight">Secure Transfer via Escrow.com</p>
+                
+                <div class="mt-8 pt-8 border-t border-gray-200 w-full text-center">
+                    <a href="https://smartinventive.com" class="text-xs text-blue-600 font-bold hover:underline">
+                        ← View Full Portfolio
+                    </a>
+                </div>
             </div>
         </div>
     </main>
+
+    <footer class="py-10 text-center">
+        <p class="text-[10px] uppercase tracking-[0.4em] font-bold text-gray-400">Managed by Smart Inventive Asset Management</p>
+    </footer>
+
+    <script>
+        // Populare automată bazată pe CONFIG
+        document.title = CONFIG.domainName + " is for sale | Premium Medical Identity";
+        document.getElementById('meta-desc').content = "Acquire " + CONFIG.domainName + ". " + CONFIG.vision.substring(0, 150) + "...";
+        
+        // UI Text
+        const nameParts = CONFIG.domainName.split('.');
+        // Aplicăm stilul de culori (albastru pe a doua parte a numelui înainte de .com)
+        // Exemplu: BrightenBite -> Brighten (alb) Bite (albastru)
+        document.getElementById('ui-title').innerHTML = CONFIG.domainName.replace('.com', '').replace(/([A-Z][a-z]+)$/, '<span class="text-blue-400">$1</span>') + '.com';
+        
+        document.getElementById('ui-slogan').innerText = '"' + CONFIG.slogan + '"';
+        document.getElementById('ui-vision').innerText = CONFIG.vision;
+        
+        // Hero Background
+        document.getElementById('hero-section').style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('${CONFIG.image}')`;
+        
+        // Ideal For List
+        const idealList = document.getElementById('ui-ideal');
+        CONFIG.idealFor.forEach(item => {
+            const li = document.createElement('li');
+            li.innerText = '• ' + item;
+            idealList.appendChild(li);
+        });
+
+        // Email Link
+        document.getElementById('ui-mail-link').href = `mailto:${CONFIG.email}?subject=Acquisition Request: ${CONFIG.domainName}`;
+    </script>
+
 </body>
 </html>
