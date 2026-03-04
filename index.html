@@ -21,9 +21,9 @@
     </nav>
 
     <header class="max-w-5xl mx-auto px-8 py-20 border-b border-gray-100">
-        <h1 class="serif text-5xl md:text-6xl mb-6 leading-tight">Distinguished <span class="italic text-center">Medical & Dental</span> Identities.</h1>
+        <h1 class="serif text-5xl md:text-6xl mb-6 leading-tight">Distinguished <span class="italic text-center text-center">Medical & Dental</span> Identities.</h1>
         <p class="text-gray-500 text-lg font-light max-w-2xl leading-relaxed">
-            Premium digital assets for specialized clinics, private practices, and healthcare leaders.
+            Acquire a high-authority digital brand. All prices include secure transfer via Escrow or Dan.com.
         </p>
     </header>
 
@@ -35,60 +35,70 @@
                     {
                         name: "BrightenBite.com",
                         slogan: "The Future of Professional Whitening.",
+                        price: "$2,895",
                         audience: "Luxury cosmetic dentistry clinics and professional whitening specialists.",
                         idea: "A premium clinical network focusing on advanced teeth brightening and aesthetic smile enhancements."
                     },
                     {
                         name: "DentFlare.com",
                         slogan: "Igniting Dental Excellence.",
+                        price: "$1,695",
                         audience: "Modern dental practices looking for a bold, energetic brand identity.",
                         idea: "A high-end dental center specialized in rapid aesthetic transformations and pain-free dentistry."
                     },
                     {
                         name: "DentiCraft.com",
                         slogan: "Where Artistry Meets Oral Surgery.",
+                        price: "$3,495",
                         audience: "Elite prosthetic clinics and dental surgeons specializing in handcrafted smiles.",
                         idea: "A boutique surgical center focused on personalized dental implants and reconstruction artistry."
                     },
                     {
                         name: "OralHealthGuard.com",
                         slogan: "Total Protection. Total Confidence.",
+                        price: "$2,295",
                         audience: "Preventive care clinics and family dental health centers.",
                         idea: "A nationwide network of clinics dedicated to long-term oral health screening and gum protection."
                     },
                     {
                         name: "OralHealthPros.com",
                         slogan: "The Standard of Professional Care.",
+                        price: "$1,995",
                         audience: "Top-tier dental practitioners and professional clinical associations.",
                         idea: "A prestigious referral network connecting patients with the most highly certified dental specialists."
                     },
                     {
                         name: "OralPrecise.com",
                         slogan: "Accuracy in Every Smile.",
+                        price: "$2,150",
                         audience: "Orthodontic specialists and surgical diagnostic centers.",
                         idea: "A specialized diagnostic clinic focusing on high-precision dental alignment and jaw correction."
                     },
                     {
                         name: "PearlWhitePro.com",
                         slogan: "Professional Luster. Redefined.",
+                        price: "$2,995",
                         audience: "High-end aesthetic practitioners and luxury dental boutiques.",
                         idea: "An exclusive clinical brand specializing in the 'Hollywood Smile' and premium porcelain veneers."
                     },
                     {
                         name: "SafeSmileClinic.com",
                         slogan: "Care You Can Trust.",
+                        price: "$3,195",
                         audience: "Family-oriented dental practices and pediatric specialists.",
                         idea: "A multi-disciplinary clinic chain focused on patient comfort and gentle dental procedures."
                     },
                     {
                         name: "ToothTuneUp.com",
                         slogan: "Optimizing Your Oral Health.",
+                        price: "$1,450",
                         audience: "Hygiene-focused practices and quick-service dental maintenance clinics.",
                         idea: "Rapid-care dental studios focused on routine cleanings, polishing, and oral maintenance."
                     },
                     {
                         name: "ILoveMedic.com",
                         slogan: "The Heart of Modern Healthcare.",
+                        price: "$1,295",
                         audience: "Private medical groups, health influencer brands, or general clinics.",
                         idea: "A compassionate medical center brand focused on patient-first holistic care and community wellness."
                     }
@@ -101,17 +111,23 @@
                                 <h2 class="text-3xl font-bold tracking-tight text-slate-900">${d.name}</h2>
                                 <span class="text-blue-600 font-bold text-xs uppercase tracking-widest italic text-center">— ${d.slogan}</span>
                             </div>
-                            <a href="mailto:admin@smartinventive.com?subject=Offer: ${d.name}" class="bg-slate-900 text-white px-5 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-blue-600 transition text-center shrink-0">
-                                Inquire
-                            </a>
+                            <div class="flex items-center gap-4">
+                                <div class="text-right">
+                                    <span class="block text-[9px] uppercase font-black text-gray-400 tracking-widest">Starting at</span>
+                                    <span class="text-xl font-bold text-slate-900">${d.price}</span>
+                                </div>
+                                <a href="mailto:admin@smartinventive.com?subject=Inquiry: ${d.name}" class="bg-slate-900 text-white px-5 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-blue-600 transition text-center shrink-0">
+                                    Inquire
+                                </a>
+                            </div>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-l-2 border-gray-50 pl-6">
                             <div>
-                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest">Suited For</h4>
+                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest text-center text-center">Suited For</h4>
                                 <p class="text-sm text-gray-600 leading-relaxed">${d.audience}</p>
                             </div>
                             <div>
-                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest">Strategic Vision</h4>
+                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest text-center text-center">Strategic Vision</h4>
                                 <p class="text-sm text-gray-600 leading-relaxed">${d.idea}</p>
                             </div>
                         </div>
@@ -125,15 +141,15 @@
     <footer class="bg-gray-50 py-24 border-t border-gray-100">
         <div class="max-w-4xl mx-auto px-8 grid md:grid-cols-2 gap-16">
             <div>
-                <h3 class="serif text-2xl mb-4 italic text-center text-center">Acquisition Process</h3>
-                <p class="text-gray-500 text-sm leading-relaxed italic text-center text-center">
-                    All transfers are managed via Escrow.com or Dan.com to guarantee full protection. Safe, fast, and professional asset hand-over.
+                <h3 class="serif text-2xl mb-4 italic text-center text-center text-center">Secure Acquisition</h3>
+                <p class="text-gray-500 text-sm leading-relaxed italic text-center text-center text-center">
+                    Transactions are processed via Escrow.com or Dan.com. We guarantee a 100% secure transfer of the domain ownership to your preferred registrar.
                 </p>
             </div>
             <div>
-                <h3 class="serif text-2xl mb-4 italic text-center text-center">Direct Contact</h3>
-                <p class="text-gray-500 text-sm leading-relaxed italic text-center text-center">
-                    Interested in multiple domains? We offer customized packages for healthcare groups. Reach out to <span class="font-bold text-blue-600 uppercase">admin@smartinventive.com</span>
+                <h3 class="serif text-2xl mb-4 italic text-center text-center text-center">Contact Broker</h3>
+                <p class="text-gray-500 text-sm leading-relaxed italic text-center text-center text-center">
+                    For bulk inquiries or custom offers, please contact our asset management team directly at <span class="font-bold text-blue-600 uppercase">admin@smartinventive.com</span>
                 </p>
             </div>
             <div class="md:col-span-2 text-center pt-16">
