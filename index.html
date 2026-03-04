@@ -11,17 +11,29 @@
         h2 { font-family: 'Crimson Pro', serif; }
         .domain-row:hover { background-color: #fcfdfe; }
         .serif { font-family: 'Crimson Pro', serif; }
+        .btn-soft {
+            background: #ffffff;
+            border: 1px solid #eef2f6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        .btn-soft:hover {
+            background: #f8faff;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+            border-color: #d1d9e6;
+        }
     </style>
 </head>
 <body class="antialiased">
 
     <nav class="border-b border-gray-100 py-6 px-8 flex justify-between items-center sticky top-0 bg-white/95 backdrop-blur-md z-50">
-        <div class="tracking-tighter font-extrabold text-2xl uppercase">Smart<span class="text-blue-600">Inventive</span></div>
-        <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest hidden md:block italic text-center">Medical Domain Assets Portfolio</div>
+        <div class="tracking-tighter font-extrabold text-2xl uppercase text-slate-800">Smart<span class="text-blue-600">Inventive</span></div>
+        <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest hidden md:block italic">Medical Domain Assets Portfolio</div>
     </nav>
 
-    <header class="max-w-5xl mx-auto px-8 py-20 border-b border-gray-100">
-        <h1 class="serif text-5xl md:text-6xl mb-6 leading-tight">Distinguished <span class="italic text-center text-center">Medical & Dental</span> Identities.</h1>
+    <header class="max-w-5xl mx-auto px-8 py-20 border-b border-gray-100 text-left">
+        <h1 class="serif text-5xl md:text-6xl mb-6 leading-tight text-slate-900">Distinguished <span class="italic">Medical & Dental</span> Identities.</h1>
         <p class="text-gray-500 text-lg font-light max-w-2xl leading-relaxed">
             Acquire a high-authority digital brand. All prices include secure transfer via Escrow or Dan.com.
         </p>
@@ -105,29 +117,29 @@
                 ];
 
                 document.write(domains.map(d => `
-                    <div class="domain-row py-12 px-4 transition-all">
+                    <div class="domain-row py-12 px-4 transition-all text-left text-left">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                             <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4">
                                 <h2 class="text-3xl font-bold tracking-tight text-slate-900">${d.name}</h2>
-                                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest italic text-center">— ${d.slogan}</span>
+                                <span class="text-blue-600 font-bold text-xs uppercase tracking-widest italic">— ${d.slogan}</span>
                             </div>
-                            <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-6">
                                 <div class="text-right">
                                     <span class="block text-[9px] uppercase font-black text-gray-400 tracking-widest">Starting at</span>
                                     <span class="text-xl font-bold text-slate-900">${d.price}</span>
                                 </div>
-                                <a href="mailto:admin@smartinventive.com?subject=Inquiry: ${d.name}" class="bg-slate-900 text-white px-5 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-blue-600 transition text-center shrink-0">
+                                <a href="mailto:admin@smartinventive.com?subject=Inquiry: ${d.name}" class="btn-soft text-slate-700 px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest shrink-0">
                                     Inquire
                                 </a>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-l-2 border-gray-50 pl-6">
-                            <div>
-                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest text-center text-center">Suited For</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-l-2 border-blue-50 pl-6">
+                            <div class="text-left">
+                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest">Suited For</h4>
                                 <p class="text-sm text-gray-600 leading-relaxed">${d.audience}</p>
                             </div>
-                            <div>
-                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest text-center text-center">Strategic Vision</h4>
+                            <div class="text-left">
+                                <h4 class="text-[9px] uppercase font-black text-gray-400 mb-1 tracking-widest">Strategic Vision</h4>
                                 <p class="text-sm text-gray-600 leading-relaxed">${d.idea}</p>
                             </div>
                         </div>
@@ -139,16 +151,16 @@
     </main>
 
     <footer class="bg-gray-50 py-24 border-t border-gray-100">
-        <div class="max-w-4xl mx-auto px-8 grid md:grid-cols-2 gap-16">
+        <div class="max-w-4xl mx-auto px-8 grid md:grid-cols-2 gap-16 text-left">
             <div>
-                <h3 class="serif text-2xl mb-4 italic text-center text-center text-center">Secure Acquisition</h3>
-                <p class="text-gray-500 text-sm leading-relaxed italic text-center text-center text-center">
+                <h3 class="serif text-2xl mb-4 italic">Secure Acquisition</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
                     Transactions are processed via Escrow.com or Dan.com. We guarantee a 100% secure transfer of the domain ownership to your preferred registrar.
                 </p>
             </div>
             <div>
-                <h3 class="serif text-2xl mb-4 italic text-center text-center text-center">Contact Broker</h3>
-                <p class="text-gray-500 text-sm leading-relaxed italic text-center text-center text-center">
+                <h3 class="serif text-2xl mb-4 italic">Contact Broker</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">
                     For bulk inquiries or custom offers, please contact our asset management team directly at <span class="font-bold text-blue-600 uppercase">admin@smartinventive.com</span>
                 </p>
             </div>
