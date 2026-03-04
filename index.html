@@ -13,7 +13,7 @@
         .serif { font-family: 'Crimson Pro', serif; }
         .btn-soft {
             background: #ffffff;
-            border: 1px solid #eef2f6;
+            border: 1.5px solid #cbd5e1; /* Margine mai vizibilă și închisă */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
         }
@@ -21,7 +21,7 @@
             background: #f8faff;
             transform: translateY(-1px);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-            border-color: #d1d9e6;
+            border-color: #94a3b8; /* Închis la hover pentru contrast */
         }
     </style>
 </head>
@@ -35,7 +35,7 @@
     <header class="max-w-5xl mx-auto px-8 py-20 border-b border-gray-100 text-left">
         <h1 class="serif text-5xl md:text-6xl mb-6 leading-tight text-slate-900">Distinguished <span class="italic">Medical & Dental</span> Identities.</h1>
         <p class="text-gray-500 text-lg font-light max-w-2xl leading-relaxed">
-            Acquire a high-authority digital brand. All prices include secure transfer via Escrow or Dan.com.
+            Acquire a high-authority digital brand. Strategic identities curated for elite healthcare providers.
         </p>
     </header>
 
@@ -44,91 +44,32 @@
             
             <script>
                 const domains = [
-                    {
-                        name: "BrightenBite.com",
-                        slogan: "The Future of Professional Whitening.",
-                        price: "$2,895",
-                        audience: "Luxury cosmetic dentistry clinics and professional whitening specialists.",
-                        idea: "A premium clinical network focusing on advanced teeth brightening and aesthetic smile enhancements."
-                    },
-                    {
-                        name: "DentFlare.com",
-                        slogan: "Igniting Dental Excellence.",
-                        price: "$1,695",
-                        audience: "Modern dental practices looking for a bold, energetic brand identity.",
-                        idea: "A high-end dental center specialized in rapid aesthetic transformations and pain-free dentistry."
-                    },
-                    {
-                        name: "DentiCraft.com",
-                        slogan: "Where Artistry Meets Oral Surgery.",
-                        price: "$3,495",
-                        audience: "Elite prosthetic clinics and dental surgeons specializing in handcrafted smiles.",
-                        idea: "A boutique surgical center focused on personalized dental implants and reconstruction artistry."
-                    },
-                    {
-                        name: "OralHealthGuard.com",
-                        slogan: "Total Protection. Total Confidence.",
-                        price: "$2,295",
-                        audience: "Preventive care clinics and family dental health centers.",
-                        idea: "A nationwide network of clinics dedicated to long-term oral health screening and gum protection."
-                    },
-                    {
-                        name: "OralHealthPros.com",
-                        slogan: "The Standard of Professional Care.",
-                        price: "$1,995",
-                        audience: "Top-tier dental practitioners and professional clinical associations.",
-                        idea: "A prestigious referral network connecting patients with the most highly certified dental specialists."
-                    },
-                    {
-                        name: "OralPrecise.com",
-                        slogan: "Accuracy in Every Smile.",
-                        price: "$2,150",
-                        audience: "Orthodontic specialists and surgical diagnostic centers.",
-                        idea: "A specialized diagnostic clinic focusing on high-precision dental alignment and jaw correction."
-                    },
-                    {
-                        name: "PearlWhitePro.com",
-                        slogan: "Professional Luster. Redefined.",
-                        price: "$2,995",
-                        audience: "High-end aesthetic practitioners and luxury dental boutiques.",
-                        idea: "An exclusive clinical brand specializing in the 'Hollywood Smile' and premium porcelain veneers."
-                    },
-                    {
-                        name: "SafeSmileClinic.com",
-                        slogan: "Care You Can Trust.",
-                        price: "$3,195",
-                        audience: "Family-oriented dental practices and pediatric specialists.",
-                        idea: "A multi-disciplinary clinic chain focused on patient comfort and gentle dental procedures."
-                    },
-                    {
-                        name: "ToothTuneUp.com",
-                        slogan: "Optimizing Your Oral Health.",
-                        price: "$1,450",
-                        audience: "Hygiene-focused practices and quick-service dental maintenance clinics.",
-                        idea: "Rapid-care dental studios focused on routine cleanings, polishing, and oral maintenance."
-                    },
-                    {
-                        name: "ILoveMedic.com",
-                        slogan: "The Heart of Modern Healthcare.",
-                        price: "$1,295",
-                        audience: "Private medical groups, health influencer brands, or general clinics.",
-                        idea: "A compassionate medical center brand focused on patient-first holistic care and community wellness."
-                    }
+                    { name: "BrightenBite.com", slogan: "The Future of Professional Whitening.", audience: "Luxury cosmetic dentistry clinics and professional whitening specialists.", idea: "A premium clinical network focusing on advanced teeth brightening and aesthetic smile enhancements." },
+                    { name: "DentFlare.com", slogan: "Igniting Dental Excellence.", audience: "Modern dental practices looking for a bold, energetic brand identity.", idea: "A high-end dental center specialized in rapid aesthetic transformations and pain-free dentistry." },
+                    { name: "DentiCraft.com", slogan: "Where Artistry Meets Oral Surgery.", audience: "Elite prosthetic clinics and dental surgeons specializing in handcrafted smiles.", idea: "A boutique surgical center focused on personalized dental implants and reconstruction artistry." },
+                    { name: "OralHealthGuard.com", slogan: "Total Protection. Total Confidence.", audience: "Preventive care clinics and family dental health centers.", idea: "A nationwide network of clinics dedicated to long-term oral health screening and gum protection." },
+                    { name: "OralHealthPros.com", slogan: "The Standard of Professional Care.", audience: "Top-tier dental practitioners and professional clinical associations.", idea: "A prestigious referral network connecting patients with the most highly certified dental specialists." },
+                    { name: "OralPrecise.com", slogan: "Accuracy in Every Smile.", audience: "Orthodontic specialists and surgical diagnostic centers.", idea: "A specialized diagnostic clinic focusing on high-precision dental alignment and jaw correction." },
+                    { name: "PearlWhitePro.com", slogan: "Professional Luster. Redefined.", audience: "High-end aesthetic practitioners and luxury dental boutiques.", idea: "An exclusive clinical brand specializing in the 'Hollywood Smile' and premium porcelain veneers." },
+                    { name: "SafeSmileClinic.com", slogan: "Care You Can Trust.", audience: "Family-oriented dental practices and pediatric specialists.", idea: "A multi-disciplinary clinic chain focused on patient comfort and gentle dental procedures." },
+                    { name: "ToothTuneUp.com", slogan: "Optimizing Your Oral Health.", audience: "Hygiene-focused practices and quick-service dental maintenance clinics.", idea: "Rapid-care dental studios focused on routine cleanings, polishing, and oral maintenance." },
+                    { name: "ILoveMedic.com", slogan: "The Heart of Modern Healthcare.", audience: "Private medical groups, health influencer brands, or general clinics.", idea: "A compassionate medical center brand focused on patient-first holistic care and community wellness." }
                 ];
 
-                document.write(domains.map(d => `
-                    <div class="domain-row py-12 px-4 transition-all text-left text-left">
+                document.write(domains.map(d => {
+                    const pageLink = d.name.replace('.com', '.html');
+                    return `
+                    <div class="domain-row py-12 px-4 transition-all">
                         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                            <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4">
+                            <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4 text-left">
                                 <h2 class="text-3xl font-bold tracking-tight text-slate-900">${d.name}</h2>
                                 <span class="text-blue-600 font-bold text-xs uppercase tracking-widest italic">— ${d.slogan}</span>
                             </div>
                             <div class="flex items-center gap-6">
-                                <div class="text-right">
-                                    <span class="block text-[9px] uppercase font-black text-gray-400 tracking-widest">Starting at</span>
-                                    <span class="text-xl font-bold text-slate-900">${d.price}</span>
-                                </div>
-                                <a href="mailto:admin@smartinventive.com?subject=Inquiry: ${d.name}" class="btn-soft text-slate-700 px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest shrink-0">
+                                <a href="${pageLink}" class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-blue-600 transition">
+                                    Brand Details
+                                </a>
+                                <a href="mailto:assets@smartinventive.com?subject=Inquiry: ${d.name}" class="btn-soft text-slate-700 px-8 py-2.5 rounded-full text-[10px] font-bold uppercase tracking-widest shrink-0">
                                     Inquire
                                 </a>
                             </div>
@@ -144,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                `).join(''));
+                `}).join(''));
             </script>
             
         </div>
@@ -155,13 +96,13 @@
             <div>
                 <h3 class="serif text-2xl mb-4 italic">Secure Acquisition</h3>
                 <p class="text-gray-500 text-sm leading-relaxed">
-                    Transactions are processed via Escrow.com or Dan.com. We guarantee a 100% secure transfer of the domain ownership to your preferred registrar.
+                    Transactions are processed via Escrow.com or Dan.com. We guarantee a 100% secure transfer of ownership to your preferred registrar.
                 </p>
             </div>
             <div>
-                <h3 class="serif text-2xl mb-4 italic">Contact Broker</h3>
+                <h3 class="serif text-2xl mb-4 italic">Contact Management</h3>
                 <p class="text-gray-500 text-sm leading-relaxed">
-                    For bulk inquiries or custom offers, please contact our asset management team directly at <span class="font-bold text-blue-600 uppercase">admin@smartinventive.com</span>
+                    For bulk inquiries or custom offers, contact our asset management team at <span class="font-bold text-blue-600 uppercase">assets@smartinventive.com</span>
                 </p>
             </div>
             <div class="md:col-span-2 text-center pt-16">
