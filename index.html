@@ -34,7 +34,8 @@
         .serif { font-family: 'Crimson Pro', serif; }
 
         .parallax-bg {
-            background-image: url('main-image.avif'); 
+            background-image: url('main-image.avif');
+            background-image2: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -42,10 +43,13 @@
             min-height: 100vh;
         }
 
-        .content-overlay {
-            background-color: rgba(255, 255, 255, 0.85); /* Lizibilitate sporita */
-            backdrop-filter: blur(8px);
+        .glass-overlay {
+            background-color: rgba(255, 255, 255, 0.35); /* Mai transparent pentru a vedea fundalul */
+            backdrop-filter: blur(8px);                /* Efectul de blur pe fundal */
+            -webkit-backdrop-filter: blur(8px);       /* Suport pentru Safari */
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         nav.sticky-nav {
@@ -83,6 +87,10 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
             border-color: #94a3b8;
         }
+        
+        h1 {
+            text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+        }
     </style>
 </head>
 <body class="antialiased text-left">
@@ -94,7 +102,7 @@
                 <div class="tracking-tighter font-extrabold text-2xl uppercase text-slate-800">
                     Smart<span class="text-blue-600">Inventive</span>
                 </div>
-                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest hidden md:block italic">
+                <div class="text-[10px] font-bold text-slate-800 uppercase tracking-widest hidden md:block italic">
                     Medical Domain Assets Portfolio
                 </div>
             </nav>
@@ -103,7 +111,7 @@
                 <h1 class="serif text-5xl md:text-6xl mb-6 leading-tight text-slate-900 tracking-tighter">
                     Distinguished <span class="italic text-slate-700">Medical & Dental</span> Identities.
                 </h1>
-                <p class="text-gray-500 text-lg font-light max-w-2xl leading-relaxed mt-8">
+                <p class="text-slate-800 text-xl font-semibold max-w-2xl leading-relaxed mt-8 tracking-tight">
                     Acquire a high-authority digital brand. Strategic identities curated for elite healthcare providers.
                 </p>
             </header>
@@ -221,7 +229,7 @@
                             </a>
                         </p>
                     </div> 
-                    <div class="md:col-span-2 text-center pt-8 opacity-20 text-[10px] uppercase tracking-[0.6em]">
+                    <div class="md:col-span-2 text-center pt-8 text-gray-400 text-[12px] uppercase tracking-[0.5em] font-light">
                         © 2026 Smart Inventive Asset Management
                     </div>
                 </div>
